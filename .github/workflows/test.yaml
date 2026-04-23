@@ -1,0 +1,22 @@
+name: Test CLI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    name: Run Test CLI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x ./test-cli.sh
+
+      - name: Run tests
+        run: ./test-cli.sh
