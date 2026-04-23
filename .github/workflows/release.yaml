@@ -48,7 +48,9 @@ jobs:
 
       - name: Create release archive
         run: |
-          rm -rf install-cli.sh
+          rm install-cli.sh
+          rm update-cli.sh
+          rm test-cli.sh
           tar -czf cli.tar.gz *
 
       - name: Fetch all tags
