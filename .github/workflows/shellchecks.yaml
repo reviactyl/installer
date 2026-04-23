@@ -1,9 +1,12 @@
+name: Shell Checks
+
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
-name: "Trigger: Push action"
+name: "Run ShellCheck"
 permissions: {}
 
 jobs:
