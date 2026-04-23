@@ -24,19 +24,19 @@ run_prerun() {
 show_help() {
     echo ""
     if [ "$CLI_VERSION" != "canary" ]; then
-    echo -e "      ${CYAN}${BOLD}Reviactyl CLI v$CLI_VERSION ${RESET}"
+    echo -e "      ${FG_CYAN}${BOLD}Reviactyl CLI v$CLI_VERSION ${RESET}"
     else
-    echo -e "      ${CYAN}${BOLD}Reviactyl CLI (Canary Release) ${RESET}"
+    echo -e "      ${FG_LIGHT_BLUE}${BOLD}Reviactyl CLI (Canary Release) ${RESET}"
     fi
     echo ""
     echo -e "${BOLD}${UNDERLINE}Usage:${RESET}"
-    echo -e "${GREEN}$ ${RESET}reviactyl install"
+    echo -e "${FG_GREEN}$ ${RESET}reviactyl install"
     echo "Install Latest version of Reviactyl panel"
     echo ""
-    echo -e "${GREEN}$ ${RESET}reviactyl upgrade"
+    echo -e "${FG_GREEN}$ ${RESET}reviactyl upgrade"
     echo "Upgrade to Latest version of Reviactyl panel"
     echo ""
-    echo -e "${GREEN}$ ${RESET}reviactyl uninstall"
+    echo -e "${FG_GREEN}$ ${RESET}reviactyl uninstall"
     echo "Remove existing installation of Reviactyl panel"
     echo ""
     exit 0
@@ -59,8 +59,7 @@ case "$1" in
         show_help
         ;;
     *)
-        echo -e "${RED}Unknown command: ${RESET}$1"
-        echo "Use: reviactyl help"
+        echo -e "${ERROR} Unknown command: ${RESET}$1"
         exit 1
         ;;
 esac

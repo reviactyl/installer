@@ -10,7 +10,7 @@ echo -e "${INFO} sup world"
 echo -e "${WARN} sup world"
 echo -e "${ERROR} sup world"
 echo -e "${SUCCESS} sup world"
-echo -e "${INSTALL} sup world"
+echo -e "${TAG} sup world"
 
 # Check progress bar
 echo ""
