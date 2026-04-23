@@ -1,3 +1,2 @@
-.rcyl2
-.rcyl2-cache
-.system-cache
+!*.sh
+*
