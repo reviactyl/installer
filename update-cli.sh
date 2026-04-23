@@ -2,7 +2,7 @@
 
 CLI_DIR="/opt/reviactyl"
 SYMLINK="/usr/local/bin/reviactyl"
-CLI_URL="https://github.com/reviactyl/cli/releases/latest/download/cli.tar.gz"
+CLI_URL="https://github.com/reviactyl/installer/releases/latest/download/cli.tar.gz"
 
 VERBOSE=0
 if [[ "$1" == "-v" || "$1" == "--verbose" ]]; then
