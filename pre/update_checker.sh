@@ -6,7 +6,7 @@ BASE_DIR="$(dirname "$SCRIPT_DIR")"
 source "$BASE_DIR/lib/core.sh"
 
 LOCAL_VERSION="$1"
-API_URL="https://reviactyl.dev/api/v2/get-version"
+API_URL="https://reviactyl.app/api/v26/get-version"
 
 JSON=$(curl -s --max-time 3 "$API_URL")
 STATUS=$?
