@@ -46,4 +46,18 @@ fi
 run_cmd "sudo ln -s $CLI_DIR/reviactyl.sh $SYMLINK" "Creating global command 'reviactyl'"
 
 echo "[SUCCESS] Reviactyl CLI installed successfully!"
-echo "You can now run: reviactyl"
+
+printf "Install Reviactyl Panel? [Y/n]: "
+read ans
+
+case "$ans" in
+  ""|Y|y)
+    reviactyl install
+    ;;
+  N|n)
+    echo "[INFO] Run the command 'reviactyl' to proceed."
+    ;;
+  *)
+    echo "[INFO] Run the command 'reviactyl' to proceed."
+    ;;
+esac
